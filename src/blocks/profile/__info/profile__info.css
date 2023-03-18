@@ -1,0 +1,16 @@
+.profile__info {
+  max-width: 100%;
+  margin-bottom: 33px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (min-width: 650px) {
+  .profile__info {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+  }
+}

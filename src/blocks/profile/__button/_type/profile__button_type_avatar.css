@@ -1,0 +1,19 @@
+.profile__button_type_avatar {
+  width: 120px;
+  height: 120px;
+  transition: opacity 0.5s ease-out;
+  border: none;
+  border-radius: 50%;
+  background-color: #000000;
+  background-image: url("../../../../images/pensil.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 26px;
+  opacity: 0;
+
+  position: absolute;
+}
+
+.profile__button_type_avatar:hover {
+  opacity: 0.8;
+}

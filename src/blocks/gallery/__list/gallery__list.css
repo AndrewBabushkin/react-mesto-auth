@@ -1,0 +1,31 @@
+.gallery__list {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 282px;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+@media (min-width: 321px) {
+  .gallery__list {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 650px) {
+  .gallery__list {
+    grid-template-columns: repeat(2, 282px);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery__list {
+    grid-template-columns: repeat(3, 282px);
+    column-gap: 17px;
+    row-gap: 20px;
+  }
+}

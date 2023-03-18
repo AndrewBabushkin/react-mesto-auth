@@ -1,0 +1,23 @@
+.popup__input-field {
+  max-width: 238px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  outline: none;
+  border: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 0 3px 0;
+  padding: 0 0 9px 0;
+  box-sizing: border-box;
+}
+
+.popup__input-field:focus {
+  border: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 650px) {
+  .popup__input-field {
+    max-width: 358px;
+  }
+}
