@@ -22,4 +22,4 @@
 
 ## Ссылки:
 
-https://andrewbabushkin.github.io/mesto-react/
+https://andrewbabushkin.github.io/react-mesto-auth/
