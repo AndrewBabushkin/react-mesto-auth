@@ -1,0 +1,15 @@
+.auth-form__title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+@media (min-width: 650px) {
+  .auth-form__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 50px;
+  }
+}

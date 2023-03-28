@@ -1,0 +1,17 @@
+.header__link-esc {
+  display: block;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #a9a9a9;
+  margin: 0 auto 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (min-width: 650px) {
+  .header__link-esc {
+    margin: 0;
+  }
+}

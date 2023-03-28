@@ -1,0 +1,18 @@
+.auth-form__link {
+  max-width: 260px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 auto 40px;
+  display: block;
+  cursor: pointer;
+}
+@media (min-width: 650px) {
+  .auth-form__link {
+    max-width: 358px;
+    margin-bottom: 80px;
+  }
+}

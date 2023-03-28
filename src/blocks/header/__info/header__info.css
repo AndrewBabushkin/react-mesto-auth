@@ -1,0 +1,15 @@
+.header__info {
+  max-width: 320px;
+  display: flex;
+  box-sizing: border-box;
+  margin-right: 30px;
+}
+
+@media (min-width: 1024px) {
+  .header__info {
+    max-width: 584px;
+    display: flex;
+    margin: 0;
+    border: none;
+  }
+}
