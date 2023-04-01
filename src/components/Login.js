@@ -20,9 +20,13 @@ function Login({ onLogin }) {
     setEmail("");
     setPassword("");
   };
+
+  useEffect(() => {
+    resetForm();
+  }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    resetForm();
     onLogin(email, password);
   };
 
@@ -51,7 +55,7 @@ function Login({ onLogin }) {
         className="auth-form__input auth-form__input_type_password"
         placeholder="Password"
         required
-        minLength="6"
+        minLength="3"
         maxLength="50"
         value={password || ""}
         onChange={handleChangePassword}

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+
 import AuthForm from "./AuthForm";
 
 function Register({ onRegister }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
 
   const handleChangeUserEmail = (event) => {
     setEmail(event.target.value);
@@ -20,9 +19,13 @@ function Register({ onRegister }) {
     setPassword("");
   };
 
+  useEffect(() => {
+    resetForm();
+  }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    resetForm();
+    console.log(email, password);
     onRegister(email, password);
   };
 

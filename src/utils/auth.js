@@ -27,23 +27,22 @@ const authorize = (email, password) => {
     .then(checkResponse)
     .then((data) => {
       if (data.token) {
+        console.log(data.token);
         localStorage.getItem("jwt", data.token);
-        console.log(data);
+
         return data.token;
       }
     });
 };
 
-const getContent = (token) => {
+const checkToken = (jwt) => {
   return fetch(`${baseUrL}/users/me`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${jwt}`,
     },
-  })
-    .then(checkResponse)
-    .then((data) => data);
+  }).then(checkResponse);
 };
 
-export { baseUrL, register, authorize, getContent };
+export { baseUrL, register, authorize, checkToken };
